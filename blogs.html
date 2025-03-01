@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Cyber Security Club FWU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header>
+        <div class="logo">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-nSwN01wCsYE3KzbZcgh1y5J7N5T08N.png" alt="CSC-FWU Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="glow-button">Home</a></li>
+                <li><a href="team.html" class="glow-button">Our Team</a></li>
+                <li><a href="events.html" class="glow-button">Events & Notice</a></li>
+                <li><a href="blogs.html" class="glow-button active">Blogs</a></li>
+                <li><a href="about.html" class="glow-button">About Us</a></li>
+                <li><a href="contact.html" class="glow-button">Contact Us</a></li>
+                <li><a href="login.html" class="glow-button">Login</a></li>
+                <li><a href="signup.html" class="glow-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blogs-content">
+        <h1>Blogs</h1>
+        <div class="blog-filters">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="cyber-laws">Cyber Laws</button>
+            <button class="filter-button" data-filter="security">Security</button>
+            <button class="filter-button" data-filter="ethical-hacking">Ethical Hacking</button>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Featured Blog -->
+            <article class="blog-card featured" data-category="cyber-laws">
+                <div class="blog-image">
+                    <img src="/placeholder.svg?height=400&width=800" alt="Cyber Laws">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="author">By Tekendra Bhandrai</span>
+                        <span class="date">March 1, 2025</span>
+                    </div>
+                    <h2>Understanding Cyber Laws in Nepal</h2>
+                    <p>Cyber laws play a crucial role in regulating online activities and protecting digital rights. In Nepal, these laws are especially important as we continue to embrace digital transformation.</p>
+                    <p>The Electronic Transaction Act (ETA) of Nepal serves as the primary legislation governing electronic transactions and cybercrime. This comprehensive framework addresses various aspects of digital security, including:</p>
+                    <ul>
+                        <li>Digital signatures and authentication</li>
+                        <li>Cybercrime prevention and punishment</li>
+                        <li>Protection of data privacy</li>
+                        <li>Regulation of electronic transactions</li>
+                    </ul>
+                    <a href="#" class="read-more glow-button">Read Full Article</a>
+                </div>
+            </article>
+
+            <!-- Regular Blog Posts -->
+            <article class="blog-card" data-category="security">
+                <div class="blog-image">
+                    <img src="/placeholder.svg?height=300&width=500" alt="Password Security">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="author">By John Doe</span>
+                        <span class="date">February 28, 2025</span>
+                    </div>
+                    <h3>Essential Password Security Tips</h3>
+                    <p>Learn about the best practices for creating and managing secure passwords in today's digital age.</p>
+                    <a href="#" class="read-more glow-button">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="ethical-hacking">
+                <div class="blog-image">
+                    <img src="/placeholder.svg?height=300&width=500" alt="Ethical Hacking">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="author">By Jane Smith</span>
+                        <span class="date">February 25, 2025</span>
+                    </div>
+                    <h3>Introduction to Ethical Hacking</h3>
+                    <p>Discover the fundamentals of ethical hacking and its importance in cybersecurity.</p>
+                    <a href="#" class="read-more glow-button">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="security">
+                <div class="blog-image">
+                    <img src="/placeholder.svg?height=300&width=500" alt="Network Security">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="author">By Mike Wilson</span>
+                        <span class="date">February 20, 2025</span>
+                    </div>
+                    <h3>Network Security Fundamentals</h3>
+                    <p>Understanding the basics of network security and how to protect your digital infrastructure.</p>
+                    <a href="#" class="read-more glow-button">Read More</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog-contribute">
+            <h2>Share Your Knowledge</h2>
+            <p>Are you passionate about cybersecurity? Share your insights with our community!</p>
+            <a href="#" class="contribute-button glow-button">Submit a Blog</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/cs4allfwu?mibextid=rS40aB7S9Ucbxw6v" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/cyber-security-club-fwu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:cscfwu@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 Copyright Reserved by CSC-FWU</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

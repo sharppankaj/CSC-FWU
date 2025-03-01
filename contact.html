@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cyber Security Club FWU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header>
+        <div class="logo">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-nSwN01wCsYE3KzbZcgh1y5J7N5T08N.png" alt="CSC-FWU Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="glow-button">Home</a></li>
+                <li><a href="team.html" class="glow-button">Our Team</a></li>
+                <li><a href="events.html" class="glow-button">Events & Notice</a></li>
+                <li><a href="blogs.html" class="glow-button">Blogs</a></li>
+                <li><a href="about.html" class="glow-button">About Us</a></li>
+                <li><a href="contact.html" class="glow-button active">Contact Us</a></li>
+                <li><a href="login.html" class="glow-button">Login</a></li>
+                <li><a href="signup.html" class="glow-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-content">
+        <h1>Contact Us</h1>
+        <p class="contact-intro">Have questions or want to get in touch? We'd love to hear from you!</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:cscfwu@gmail.com">cscfwu@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Facebook</h3>
+                        <p><a href="https://www.facebook.com/cs4allfwu?mibextid=rS40aB7S9Ucbxw6v" target="_blank">Cyber Security Club FWU</a></p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/company/cyber-security-club-fwu/" target="_blank">Cyber Security Club FWU</a></p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Far Western University, Mahendranagar, Nepal</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button glow-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest events, workshops, and cybersecurity news.</p>
+            <form id="newsletter-form">
+                <div class="newsletter-input">
+                    <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-button glow-button">Subscribe</button>
+                </div>
+            </form>
+            <div id="subscription-message" class="hidden">
+                <p>Thank you for subscribing! We're excited to have you join our community.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/cs4allfwu?mibextid=rS40aB7S9Ucbxw6v" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/cyber-security-club-fwu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:cscfwu@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 Copyright Reserved by CSC-FWU</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
