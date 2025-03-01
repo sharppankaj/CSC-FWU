@@ -56,12 +56,12 @@ header {
   list-style: none;
 }
 
-/* Glowing Button Effect */
+/* Glowing Button Effect - Updated Colors */
 .glow-button {
   padding: 0.5rem 1rem;
-  color: #00ff00;
+  color: #66d9ff;
   text-decoration: none;
-  border: 1px solid #00ff00;
+  border: 1px solid #66d9ff;
   border-radius: 4px;
   transition: all 0.3s ease;
   background-color: transparent;
@@ -72,9 +72,9 @@ header {
 
 .glow-button:hover,
 .glow-button.active {
-  background-color: #00ff00;
+  background-color: #66d9ff;
   color: #000;
-  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  box-shadow: 0 0 10px #66d9ff, 0 0 20px rgba(102, 217, 255, 0.5);
 }
 
 /* Main Content Styles */
@@ -95,7 +95,7 @@ main {
 }
 
 .hero .highlight {
-  color: #00ff00;
+  color: #66d9ff;
 }
 
 .hero h2 {
@@ -123,12 +123,12 @@ main {
   padding: 2rem;
   border-radius: 8px;
   text-align: center;
-  border: 1px solid #00ff00;
+  border: 1px solid #66d9ff;
 }
 
 .feature-card i {
   font-size: 3rem;
-  color: #00ff00;
+  color: #66d9ff;
   margin-bottom: 1rem;
 }
 
@@ -139,7 +139,7 @@ main {
   border-radius: 8px;
   max-width: 500px;
   margin: 0 auto;
-  border: 1px solid #00ff00;
+  border: 1px solid #66d9ff;
 }
 
 .form-group {
@@ -149,14 +149,14 @@ main {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #00ff00;
+  color: #66d9ff;
 }
 
 .form-group input {
   width: 100%;
   padding: 0.5rem;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #00ff00;
+  border: 1px solid #66d9ff;
   color: #fff;
   border-radius: 4px;
 }
@@ -214,7 +214,7 @@ footer {
 }
 
 .social-links a {
-  color: #00ff00;
+  color: #66d9ff;
   font-size: 1.5rem;
   margin: 0 1rem;
   transition: color 0.3s ease;
@@ -240,7 +240,7 @@ footer {
   background-color: #000;
   margin: 15% auto;
   padding: 2rem;
-  border: 1px solid #00ff00;
+  border: 1px solid #66d9ff;
   width: 80%;
   max-width: 500px;
   position: relative;
@@ -253,7 +253,7 @@ footer {
   top: 0.5rem;
   font-size: 2rem;
   cursor: pointer;
-  color: #00ff00;
+  color: #66d9ff;
 }
 
 /* Blogs Page Styles */
@@ -274,8 +274,8 @@ footer {
 .filter-button {
   padding: 0.5rem 1rem;
   background: transparent;
-  border: 1px solid #00ff00;
-  color: #00ff00;
+  border: 1px solid #66d9ff;
+  color: #66d9ff;
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -283,9 +283,9 @@ footer {
 
 .filter-button:hover,
 .filter-button.active {
-  background: #00ff00;
+  background: #66d9ff;
   color: #000;
-  box-shadow: 0 0 10px #00ff00;
+  box-shadow: 0 0 10px rgba(102, 217, 255, 0.7);
 }
 
 .blog-grid {
@@ -296,7 +296,7 @@ footer {
 
 .blog-card {
   background: rgba(0, 0, 0, 0.7);
-  border: 1px solid #00ff00;
+  border: 1px solid #66d9ff;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -330,7 +330,7 @@ footer {
 .blog-meta {
   display: flex;
   justify-content: space-between;
-  color: #00ff00;
+  color: #66d9ff;
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
@@ -378,7 +378,7 @@ footer {
   background: rgba(0, 0, 0, 0.7);
   padding: 3rem;
   border-radius: 8px;
-  border: 1px solid #00ff00;
+  border: 1px solid #66d9ff;
 }
 
 .blog-contribute h2 {
@@ -393,7 +393,7 @@ footer {
   display: inline-block;
 }
 
-/* Team Page Styles */
+/* Team Page Styles - Updated Colors */
 .team-content {
   padding-top: 150px;
   text-align: center;
@@ -402,8 +402,8 @@ footer {
 .team-content h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #00ff00;
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  color: #66d9ff;
+  text-shadow: 0 0 10px rgba(102, 217, 255, 0.5);
 }
 
 .team-intro {
@@ -425,7 +425,7 @@ footer {
 .team-category h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: #00ff00;
+  color: #66d9ff;
   text-align: center;
   position: relative;
   display: inline-block;
@@ -439,8 +439,8 @@ footer {
   transform: translateX(-50%);
   width: 50px;
   height: 3px;
-  background-color: #00ff00;
-  box-shadow: 0 0 10px #00ff00;
+  background-color: #66d9ff;
+  box-shadow: 0 0 10px rgba(102, 217, 255, 0.7);
 }
 
 .team-grid {
@@ -455,17 +455,18 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 255, 0, 0.3);
+  border: 1px solid rgba(102, 217, 255, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
+  backdrop-filter: blur(5px);
 }
 
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-  border-color: #00ff00;
+  box-shadow: 0 0 15px rgba(102, 217, 255, 0.5);
+  border-color: #66d9ff;
 }
 
 .member-image {
@@ -474,8 +475,34 @@ footer {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1rem;
-  border: 3px solid #00ff00;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  border: 3px solid #66d9ff;
+  box-shadow: 0 0 10px rgba(102, 217, 255, 0.5);
+  position: relative;
+}
+
+.member-image:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #66d9ff, #a64dff);
+  z-index: -1;
+  opacity: 0.7;
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
 }
 
 .member-image img {
@@ -501,9 +528,10 @@ footer {
 }
 
 .member-role {
-  color: #00ff00;
+  color: #a64dff;
   font-size: 0.9rem;
   margin-bottom: 0.8rem;
+  font-weight: 500;
 }
 
 .member-contact {
@@ -515,11 +543,12 @@ footer {
 
 .member-contact a {
   color: #ccc;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .member-contact a:hover {
-  color: #00ff00;
+  color: #66d9ff;
+  transform: translateY(-2px);
 }
 
 .member-phone {
