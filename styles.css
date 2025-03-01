@@ -79,9 +79,10 @@ header {
 
 /* Main Content Styles */
 main {
-  padding: 120px 2rem 2rem;
+  padding: 120px 2rem 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 4rem;
 }
 
 .hero {
@@ -140,6 +141,7 @@ main {
   max-width: 500px;
   margin: 0 auto;
   border: 1px solid #66d9ff;
+  margin-top: 2rem;
 }
 
 .form-group {
@@ -258,9 +260,10 @@ footer {
 
 /* Blogs Page Styles */
 .blogs-content {
-  padding-top: 120px;
+  padding-top: 180px;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: calc(100vh - 120px);
 }
 
 .blog-filters {
@@ -585,6 +588,23 @@ footer {
     width: 120px;
     height: 120px;
   }
+  .events-content,
+  .blogs-content,
+  .about-content,
+  .contact-content,
+  .auth-content {
+    padding-top: 150px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .events-content h1,
+  .blogs-content h1,
+  .about-content h1,
+  .contact-content h1,
+  .auth-content h2 {
+    font-size: 2rem;
+  }
 }
 
 /* Responsive Design for Blogs */
@@ -617,5 +637,41 @@ footer {
     max-width: 280px;
     margin: 0 auto;
   }
+}
+
+/* Common content section styles */
+.events-content,
+.blogs-content,
+.about-content,
+.contact-content,
+.auth-content {
+  padding-top: 180px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 120px);
+}
+
+/* Section specific heading styles */
+.events-content h1,
+.blogs-content h1,
+.about-content h1,
+.contact-content h1,
+.auth-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #66d9ff;
+  text-shadow: 0 0 10px rgba(102, 217, 255, 0.5);
+  text-align: center;
+}
+
+/* Section intro text styles */
+.events-intro,
+.blogs-intro,
+.about-intro,
+.contact-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: #ccc;
 }
 
