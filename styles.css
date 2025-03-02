@@ -873,6 +873,349 @@ footer {
     width: 100%;
   }
 }
+
+/* Events Page Styles - Updated */
+.events-content {
+  padding-top: 180px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 120px);
+}
+
+.events-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.events-header h1 {
+  font-size: 2.5rem;
+  color: #66d9ff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(102, 217, 255, 0.5);
+}
+
+.events-header p {
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.events-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Featured Event Styles */
+.event-card.featured {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(102, 217, 255, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.event-card.featured:hover {
+  transform: translateY(-5px);
+  border-color: #66d9ff;
+  box-shadow: 0 0 20px rgba(102, 217, 255, 0.2);
+}
+
+.event-banner {
+  background: linear-gradient(45deg, rgba(102, 217, 255, 0.1), rgba(102, 217, 255, 0.05));
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(102, 217, 255, 0.2);
+}
+
+.event-date {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #66d9ff;
+}
+
+.event-date .month {
+  display: block;
+  color: #66d9ff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.event-date .day {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0.3rem 0;
+}
+
+.event-date .year {
+  display: block;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.event-category {
+  background: rgba(102, 217, 255, 0.1);
+  color: #66d9ff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(102, 217, 255, 0.3);
+}
+
+.event-content {
+  padding: 2rem;
+}
+
+.event-content h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.event-description {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+}
+
+.detail i {
+  color: #66d9ff;
+}
+
+.event-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.register-btn,
+.details-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.register-btn {
+  background: #66d9ff;
+  color: #000;
+}
+
+.register-btn:hover {
+  background: #33ccff;
+  box-shadow: 0 0 15px rgba(102, 217, 255, 0.5);
+}
+
+.details-btn {
+  border: 1px solid #66d9ff;
+  color: #66d9ff;
+}
+
+.details-btn:hover {
+  background: rgba(102, 217, 255, 0.1);
+}
+
+/* Events Section */
+.section-title {
+  color: #66d9ff;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #66d9ff;
+  border-radius: 3px;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.event-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(102, 217, 255, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  border-color: #66d9ff;
+  box-shadow: 0 0 15px rgba(102, 217, 255, 0.2);
+}
+
+.event-card .event-content {
+  padding: 1.5rem;
+}
+
+.event-card h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Notices Section */
+.notices-section {
+  margin-top: 2rem;
+}
+
+.notices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.notice-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(102, 217, 255, 0.3);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.notice-card:hover {
+  transform: translateY(-5px);
+  border-color: #66d9ff;
+  box-shadow: 0 0 15px rgba(102, 217, 255, 0.2);
+}
+
+.notice-card.priority {
+  border-color: #66d9ff;
+  background: linear-gradient(45deg, rgba(102, 217, 255, 0.1), rgba(0, 0, 0, 0.7));
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.notice-tag {
+  background: rgba(102, 217, 255, 0.1);
+  color: #66d9ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(102, 217, 255, 0.3);
+}
+
+.notice-date {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.notice-card h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.notice-card p {
+  color: #ccc;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.notice-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notice-btn {
+  color: #66d9ff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.notice-btn:hover {
+  color: #33ccff;
+  transform: translateX(5px);
+}
+
+.notice-deadline {
+  color: #ff6666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .events-header h1 {
+    font-size: 2rem;
+  }
+
+  .event-card.featured .event-banner {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .event-actions {
+    flex-direction: column;
+  }
+
+  .register-btn,
+  .details-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .notices-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-details {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .notice-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
 /* Common content section styles */
 .events-content,
 .blogs-content,
