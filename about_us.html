@@ -6,6 +6,7 @@
     <title>About Us - Cyber Security Club FWU</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="background-overlay"></div>
@@ -29,24 +30,44 @@
     </header>
 
     <main class="about-content">
-        <section class="about-hero">
+        <section class="about-hero animate__animated animate__fadeIn">
             <h1>About Us</h1>
-            <p style="text-align: center; font-weight: bold;" class="tagline">Empowering students with cybersecurity knowledge and skills</p>
+            <p class="tagline">Empowering students with cybersecurity knowledge and skills</p>
         </section>
         
         <section class="about-story">
-            <div class="about-image">
-                <img src="team.jpg" alt="Club Members">
+            <div class="about-image animate__animated animate__fadeInLeft">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/team-placeholder-Ow9Nt9Ij9Yd1Yd9Yd9Yd9Yd9Yd9Yd.jpg" alt="Club Members" class="about-img">
+                <div class="image-overlay">
+                    <div class="overlay-content">
+                        <h3>CSC-FWU</h3>
+                        <p>Founded in 2025</p>
+                    </div>
+                </div>
             </div>
-            <div class="about-text">
+            <div class="about-text animate__animated animate__fadeInRight">
                 <h2>Our Story</h2>
                 <p>The Cyber Security Club at Far Western University was founded in 2025 by a group of passionate students who recognized the growing importance of cybersecurity in our increasingly digital world.</p>
                 <p>What started as informal discussions among a few like-minded individuals quickly grew into a structured organization dedicated to promoting cybersecurity awareness, education, and skills development among students.</p>
                 <p>Today, our club has grown to include 16 dedicated members who work together to organize workshops, seminars, competitions, and other events that help students learn about cybersecurity concepts and practices.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">16</span>
+                        <span class="stat-label">Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Events</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Workshops</span>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <section class="mission-vision">
+        <section class="mission-vision animate__animated animate__fadeIn">
             <div class="mission">
                 <div class="icon">
                     <i class="fas fa-bullseye"></i>
@@ -63,7 +84,7 @@
             </div>
         </section>
         
-        <section class="what-we-do">
+        <section class="what-we-do animate__animated animate__fadeIn">
             <h2>What We Do</h2>
             <div class="activities">
                 <div class="activity-card">
@@ -96,7 +117,45 @@
                 </div>
             </div>
         </section>
+
+        <section class="timeline-section animate__animated animate__fadeIn">
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>January 2025</h3>
+                        <p>Club founded by a group of passionate cybersecurity enthusiasts</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>March 2025</h3>
+                        <p>First cybersecurity workshop conducted with 50+ participants</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>May 2025</h3>
+                        <p>Organized first Capture The Flag competition</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>August 2025</h3>
+                        <p>Established partnership with industry professionals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
         <div class="social-links">

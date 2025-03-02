@@ -5,6 +5,7 @@ const closeModal = document.querySelector(".close")
 const loginForm = document.getElementById("login-form")
 const signupForm = document.getElementById("signup-form")
 const resetPasswordForm = document.getElementById("reset-password-form")
+const scrollToTopBtn = document.getElementById("scroll-to-top")
 
 // Event Listeners
 if (forgotPasswordLink) {
@@ -138,3 +139,33 @@ if (filterButtons.length > 0) {
     })
   })
 }
+
+// Scroll to Top Button
+window.addEventListener("scroll", () => {
+  if (scrollToTopBtn) {
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add("visible")
+    } else {
+      scrollToTopBtn.classList.remove("visible")
+    }
+  }
+})
+
+if (scrollToTopBtn) {
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  })
+}
+
+// Text animation on page load
+document.addEventListener("DOMContentLoaded", () => {
+  // Add animation classes to elements if needed
+  const animatedElements = document.querySelectorAll(".animate__animated")
+  animatedElements.forEach((element) => {
+    // Make sure animations are visible
+    element.style.visibility = "visible"
+  })
+})

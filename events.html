@@ -7,6 +7,7 @@
     <title>Events & Notice - Cyber Security Club FWU</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -32,14 +33,28 @@
     </header>
 
     <main class="events-content">
-        <div class="events-header">
+        <div class="events-header animate__animated animate__fadeIn">
             <h1>Events & Notices</h1>
             <p>Stay updated with our latest events, workshops, and important announcements.</p>
         </div>
 
+        <div class="events-tabs animate__animated animate__fadeIn animate__delay-1s">
+            <button class="tab-btn active" data-tab="all">All</button>
+            <button class="tab-btn" data-tab="upcoming">Upcoming</button>
+            <button class="tab-btn" data-tab="past">Past Events</button>
+            <button class="tab-btn" data-tab="notices">Notices</button>
+        </div>
+
+        <div class="events-search animate__animated animate__fadeIn animate__delay-1s">
+            <div class="search-container">
+                <input type="text" id="events-search" placeholder="Search events...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
         <div class="events-grid">
             <!-- Featured Event -->
-            <div class="event-card featured">
+            <div class="event-card featured animate__animated animate__fadeInUp animate__delay-1s" data-category="upcoming">
                 <div class="event-banner">
                     <div class="event-date">
                         <span class="month">MAR</span>
@@ -51,7 +66,8 @@
                 <div class="event-content">
                     <h2>Cybersecurity Summit 2025</h2>
                     <p class="event-description">Join us for our annual cybersecurity summit featuring industry experts,
-                        hands-on workshops, and networking opportunities.</p>
+                        hands-on workshops, and networking opportunities. Learn about the latest trends, threats, and solutions
+                        in the cybersecurity landscape.</p>
                     <div class="event-details">
                         <div class="detail">
                             <i class="fas fa-clock"></i>
@@ -66,6 +82,24 @@
                             <span>Limited to 100 participants</span>
                         </div>
                     </div>
+                    <div class="countdown-timer" data-date="2025-03-15T09:00:00">
+                        <div class="countdown-item">
+                            <span class="countdown-value days">00</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value hours">00</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value minutes">00</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value seconds">00</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
                     <div class="event-actions">
                         <a href="#" class="register-btn">Register Now</a>
                         <a href="#" class="details-btn">Learn More</a>
@@ -74,10 +108,10 @@
             </div>
 
             <!-- Upcoming Events Section -->
-            <section class="events-section">
-                <h2 class="section-title">Upcoming Events</h2>
+            <section class="events-section" id="upcoming-events">
+                <h2 class="section-title animate__animated animate__fadeIn animate__delay-2s">Upcoming Events</h2>
                 <div class="events-list">
-                    <div class="event-card">
+                    <div class="event-card animate__animated animate__fadeInUp animate__delay-2s" data-category="upcoming">
                         <div class="event-date">
                             <span class="month">MAR</span>
                             <span class="day">22</span>
@@ -85,7 +119,8 @@
                         <div class="event-content">
                             <div class="event-category">Workshop</div>
                             <h3>Ethical Hacking Basics</h3>
-                            <p>Learn the fundamentals of ethical hacking and penetration testing.</p>
+                            <p>Learn the fundamentals of ethical hacking and penetration testing. This hands-on workshop will cover
+                               reconnaissance techniques, vulnerability scanning, and basic exploitation methods.</p>
                             <div class="event-details">
                                 <div class="detail">
                                     <i class="fas fa-clock"></i>
@@ -100,7 +135,7 @@
                         </div>
                     </div>
 
-                    <div class="event-card">
+                    <div class="event-card animate__animated animate__fadeInUp animate__delay-2s" data-category="upcoming">
                         <div class="event-date">
                             <span class="month">MAR</span>
                             <span class="day">29</span>
@@ -108,7 +143,8 @@
                         <div class="event-content">
                             <div class="event-category">Competition</div>
                             <h3>CTF Challenge</h3>
-                            <p>Test your skills in our Capture The Flag competition.</p>
+                            <p>Test your skills in our Capture The Flag competition. Solve challenges in web security, cryptography,
+                               reverse engineering, and more to win exciting prizes.</p>
                             <div class="event-details">
                                 <div class="detail">
                                     <i class="fas fa-clock"></i>
@@ -122,49 +158,159 @@
                             <a href="#" class="register-btn">Register Now</a>
                         </div>
                     </div>
+                    
+                    <div class="event-card animate__animated animate__fadeInUp animate__delay-3s" data-category="upcoming">
+                        <div class="event-date">
+                            <span class="month">APR</span>
+                            <span class="day">05</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-category">Seminar</div>
+                            <h3>Cybersecurity Career Paths</h3>
+                            <p>Explore various career opportunities in the field of cybersecurity. Industry professionals will share
+                               insights about different roles, required skills, and how to prepare for a successful career.</p>
+                            <div class="event-details">
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>1:00 PM - 3:00 PM</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Seminar Hall, FWU</span>
+                                </div>
+                            </div>
+                            <a href="#" class="register-btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Past Events Section -->
+            <section class="events-section" id="past-events" style="display: none;">
+                <h2 class="section-title">Past Events</h2>
+                <div class="events-list">
+                    <div class="event-card" data-category="past">
+                        <div class="event-date">
+                            <span class="month">FEB</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-category">Workshop</div>
+                            <h3>Network Security Fundamentals</h3>
+                            <p>A comprehensive workshop on network security principles, firewall configuration, and intrusion detection systems.</p>
+                            <div class="event-details">
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2:00 PM - 5:00 PM</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Computer Lab 1</span>
+                                </div>
+                            </div>
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="past">
+                        <div class="event-date">
+                            <span class="month">JAN</span>
+                            <span class="day">25</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-category">Seminar</div>
+                            <h3>Cybersecurity Awareness</h3>
+                            <p>An introductory seminar on cybersecurity awareness, common threats, and best practices for staying safe online.</p>
+                            <div class="event-details">
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>3:00 PM - 4:30 PM</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Main Auditorium, FWU</span>
+                                </div>
+                            </div>
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Notices Section -->
-            <section class="notices-section">
-                <h2 class="section-title">Important Notices</h2>
+            <section class="notices-section" id="notices-section">
+                <h2 class="section-title animate__animated animate__fadeIn animate__delay-3s">Important Notices</h2>
                 <div class="notices-grid">
-                    <div class="notice-card priority">
+                    <div class="notice-card priority animate__animated animate__fadeInUp animate__delay-3s" data-category="notices">
                         <div class="notice-header">
                             <div class="notice-tag">Important</div>
                             <div class="notice-date">March 1, 2025</div>
                         </div>
                         <h3>Membership Registration Open</h3>
-                        <p>Registration for new club members is now open. Limited spots available.</p>
+                        <p>Registration for new club members is now open. Limited spots available. Join us to enhance your cybersecurity skills and network with like-minded individuals.</p>
                         <div class="notice-actions">
                             <a href="#" class="notice-btn">Read More</a>
                             <span class="notice-deadline">Deadline: March 15, 2025</span>
                         </div>
                     </div>
 
-                    <div class="notice-card">
+                    <div class="notice-card animate__animated animate__fadeInUp animate__delay-3s" data-category="notices">
                         <div class="notice-header">
                             <div class="notice-tag">Announcement</div>
                             <div class="notice-date">February 28, 2025</div>
                         </div>
                         <h3>New Workshop Series</h3>
-                        <p>Monthly workshop series on advanced cybersecurity topics starting next month.</p>
+                        <p>Monthly workshop series on advanced cybersecurity topics starting next month. Topics will include web security, network security, cryptography, and more.</p>
                         <a href="#" class="notice-btn">Read More</a>
                     </div>
 
-                    <div class="notice-card">
+                    <div class="notice-card animate__animated animate__fadeInUp animate__delay-3s" data-category="notices">
                         <div class="notice-header">
                             <div class="notice-tag">Update</div>
                             <div class="notice-date">February 25, 2025</div>
                         </div>
                         <h3>Lab Schedule Changes</h3>
-                        <p>Updated schedule for cybersecurity lab access and practice sessions.</p>
+                        <p>Updated schedule for cybersecurity lab access and practice sessions. Please check the new timings and make necessary adjustments to your schedule.</p>
                         <a href="#" class="notice-btn">Read More</a>
                     </div>
                 </div>
             </section>
         </div>
+
+        <div class="events-calendar animate__animated animate__fadeIn animate__delay-4s">
+            <h2 class="section-title">Events Calendar</h2>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                    <h3 id="current-month">March 2025</h3>
+                    <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">Sun</div>
+                    <div class="calendar-day-header">Mon</div>
+                    <div class="calendar-day-header">Tue</div>
+                    <div class="calendar-day-header">Wed</div>
+                    <div class="calendar-day-header">Thu</div>
+                    <div class="calendar-day-header">Fri</div>
+                    <div class="calendar-day-header">Sat</div>
+                    <!-- Calendar days will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="event-subscribe animate__animated animate__fadeIn animate__delay-4s">
+            <h2>Never Miss an Event</h2>
+            <p>Subscribe to our events newsletter to stay updated with all our upcoming activities.</p>
+            <form class="event-subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
     </main>
+
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
         <div class="social-links">
@@ -172,10 +318,12 @@
                     class="fab fa-facebook"></i></a>
             <a href="https://www.linkedin.com/company/cyber-security-club-fwu/" target="_blank"><i
                     class="fab fa-linkedin"></i></a>
-            <a href="mailto:cscfwu@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="cscfwu@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
         <p>&copy; 2025 Copyright Reserved by CSC-FWU</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

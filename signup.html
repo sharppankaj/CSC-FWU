@@ -6,6 +6,7 @@
     <title>Sign Up - Cyber Security Club FWU</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="background-overlay"></div>
@@ -29,32 +30,62 @@
     </header>
 
     <main class="auth-content">
-        <div class="auth-container">
+        <div class="auth-container animate__animated animate__fadeIn">
             <h2>Create an Account</h2>
+            <div class="auth-tabs">
+                <button class="auth-tab" data-tab="login">Login</button>
+                <button class="auth-tab active" data-tab="signup">Sign Up</button>
+            </div>
             <form id="signup-form">
                 <div class="form-group">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" required>
+                    <div class="form-floating">
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                        <label for="fullname">Full Name</label>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="signup-email">Email</label>
-                    <input type="email" id="signup-email" name="email" required>
+                    <div class="form-floating">
+                        <input type="email" id="signup-email" name="email" placeholder="Email" required>
+                        <label for="signup-email">Email</label>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="signup-password">Password</label>
-                    <input type="password" id="signup-password" name="password" required>
+                    <div class="form-floating">
+                        <input type="password" id="signup-password" name="password" placeholder="Password" required>
+                        <label for="signup-password">Password</label>
+                        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                        </div>
+                        <span class="strength-text">Password strength</span>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div class="form-floating">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                        <label for="confirm-password">Confirm Password</label>
+                        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="form-options">
                     <div class="terms">
                         <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">I agree to the Terms and Conditions</label>
+                        <label for="terms">I agree to the <a href="#" class="terms-link">Terms and Conditions</a></label>
                     </div>
                 </div>
-                <button type="submit" class="auth-button glow-button">Sign Up</button>
+                <button type="submit" class="auth-button glow-button">
+                    <span class="button-text">Sign Up</span>
+                    <span class="button-icon"><i class="fas fa-user-plus"></i></span>
+                </button>
             </form>
             
             <div class="social-auth">
@@ -73,7 +104,66 @@
                 <p>Already have an account? <a href="login.html">Login</a></p>
             </div>
         </div>
+        
+        <div class="auth-features animate__animated animate__fadeIn animate__delay-1s">
+            <h3>Why Join Us?</h3>
+            <ul class="benefits-list">
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h4>Learn & Grow</h4>
+                        <p>Develop practical cybersecurity skills through hands-on workshops</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <h4>Compete & Win</h4>
+                        <p>Participate in CTF competitions and cybersecurity challenges</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-network-wired"></i>
+                    <div>
+                        <h4>Network & Connect</h4>
+                        <p>Build relationships with peers and industry professionals</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <h4>Career Opportunities</h4>
+                        <p>Access to internship and job opportunities in cybersecurity</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </main>
+
+    <div id="terms-modal" class="modal">
+        <div class="modal-content animate__animated animate__fadeInDown">
+            <span class="close">&times;</span>
+            <h2>Terms and Conditions</h2>
+            <div class="terms-content">
+                <h3>1. Membership Terms</h3>
+                <p>By joining the Cyber Security Club at Far Western University, you agree to abide by the club's code of conduct and participate in club activities responsibly.</p>
+                
+                <h3>2. Ethical Guidelines</h3>
+                <p>Members must use the knowledge and skills gained through the club for ethical purposes only. Any malicious activities or misuse of cybersecurity knowledge is strictly prohibited.</p>
+                
+                <h3>3. Privacy Policy</h3>
+                <p>We collect basic information for club membership purposes. Your personal information will be kept confidential and will not be shared with third parties without your consent.</p>
+                
+                <h3>4. Content Usage</h3>
+                <p>Materials provided by the club are for educational purposes only. Redistribution or commercial use of club materials without permission is not allowed.</p>
+            </div>
+            <button class="auth-button glow-button terms-accept-btn">I Accept</button>
+        </div>
+    </div>
+
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
         <div class="social-links">
@@ -87,3 +177,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
