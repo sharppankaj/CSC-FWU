@@ -7,6 +7,7 @@
     <title>Our Team - Cyber Security Club FWU</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -32,16 +33,30 @@
     </header>
 
     <main class="team-content">
-        <h1>Our Team</h1>
-        <p class="team-intro">Meet the dedicated members who make our Cyber Security Club possible. Our team is
+        <h1 class="animate__animated animate__fadeIn">Our Team</h1>
+        <p class="team-intro animate__animated animate__fadeIn animate__delay-1s">Meet the dedicated members who make our Cyber Security Club possible. Our team is
             committed to promoting cybersecurity awareness and education.</p>
 
+        <div class="team-search-filter animate__animated animate__fadeIn animate__delay-1s">
+            <div class="search-container">
+                <input type="text" id="team-search" placeholder="Search team members...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="team-filters">
+                <button class="team-filter-btn active" data-filter="all">All</button>
+                <button class="team-filter-btn" data-filter="leadership">Leadership</button>
+                <button class="team-filter-btn" data-filter="administration">Administration</button>
+                <button class="team-filter-btn" data-filter="department">Department Leads</button>
+                <button class="team-filter-btn" data-filter="executive">Executive Members</button>
+            </div>
+        </div>
+
         <div class="team-categories">
-            <div class="team-category">
-                <h2>Leadership</h2>
+            <div class="team-category" data-category="leadership">
+                <h2 class="animate__animated animate__fadeIn animate__delay-1s">Leadership</h2>
                 <div class="team-grid">
                     <!-- Team Member 1 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-1s">
                         <div class="member-image">
                             <img src="https://scontent.fdhi1-1.fna.fbcdn.net/v/t1.6435-9/166199383_786392385613141_7207051575941129581_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Qf3zvikL3CoQ7kNvgH6bgDX&_nc_oc=AdippJxOJyQ3GRF_YFr-9wLakFviUeWn94yDS-JQhA8F5mJciQI9Sn3ymwmf8EuK4PooXrrEp5cO2jUwSy_kE_Nq&_nc_zt=23&_nc_ht=scontent.fdhi1-1.fna&_nc_gid=ASamMqz0mk5p8TB7UUVQvPL&oh=00_AYDjrmXTmSVYP63GBtqwexR7JK5u_dwvQiHRYLUihYG9XA&oe=67EBB5E8" alt="Dipak Raj Giri">
                         </div>
@@ -55,10 +70,18 @@
                                 <a href="https://github.com/Dipakrajgiri" target="_blank" aria-label="GitHub Profile of Dipak Raj Giri"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
+                        <div class="member-hover-info">
+                            <p>Cybersecurity expert with expertise in network security and penetration testing.</p>
+                            <div class="member-skills">
+                                <span>Ethical Hacking</span>
+                                <span>Network Security</span>
+                                <span>OSINT</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Team Member 2 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="member-image">
                             <img src="https://scontent.fdhi1-1.fna.fbcdn.net/v/t39.30808-6/480776148_602900729376918_677146551544597532_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xyQEAbfwLRkQ7kNvgFDJuSD&_nc_oc=Adjxts93-e_QG6bJ6pNwh0WB20_gNQY3Scjo6fw2MF6oiEdhCBoKkZN4YNiKRl_ZyPpOTFzab9K5pc5eApPaFTL-&_nc_zt=23&_nc_ht=scontent.fdhi1-1.fna&_nc_gid=ADKGByKRdAtHyOhwlp16VRB&oh=00_AYCe0YiGoCB8ioVQaeiOusmP-j1Ns-l1a73YI_8Fo_AKsQ&oe=67CA372F" alt="Pankaj Joshi">
                         </div>
@@ -72,10 +95,18 @@
                                 <a href="https://github.com/sharppankaj" target="_blank" aria-label="GitHub Profile of Pankaj Joshi"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
+                        <div class="member-hover-info">
+                            <p>Leading the club's initiatives and strategic direction with passion for cybersecurity education.</p>
+                            <div class="member-skills">
+                                <span>Leadership</span>
+                                <span>Web Security</span>
+                                <span>CTF</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Team Member 3 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="member-image">
                             <img src="/placeholder.svg?height=200&width=200" alt="Dipa Joshi">
                         </div>
@@ -83,15 +114,23 @@
                             <h3>Dipa Joshi</h3>
                             <p class="member-role">Vice President</p>
                             <div class="member-contact">
-                                <a href="mailto:dipajoshi@gmail.com" aria-label="Email Dipa Joshi"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:dipajoshi@example.com" aria-label="Email Dipa Joshi"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/dipajoshi" target="_blank" aria-label="LinkedIn Profile of Dipa Joshi"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/dipajoshi" target="_blank" aria-label="GitHub Profile of Dipa Joshi"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Coordinating club activities and supporting the president in achieving club goals.</p>
+                            <div class="member-skills">
+                                <span>Management</span>
+                                <span>Cryptography</span>
+                                <span>Digital Forensics</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Team Member 4 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-4s">
                         <div class="member-image">
                             <img src="/placeholder.svg?height=200&width=200" alt="Himanjali Pandey">
                         </div>
@@ -99,20 +138,28 @@
                             <h3>Himanjali Pandey</h3>
                             <p class="member-role">Vice President</p>
                             <div class="member-contact">
-                                <a href="mailto:himanjalipandey@gmail.com" aria-label="Email Himanjali Pandey"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:himanjalipandey@example.com" aria-label="Email Himanjali Pandey"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/himanjalipandey" target="_blank" aria-label="LinkedIn Profile of Himanjali Pandey"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/himanjalipandey" target="_blank" aria-label="GitHub Profile of Himanjali Pandey"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Focused on outreach and community engagement for the club's initiatives.</p>
+                            <div class="member-skills">
+                                <span>Community Building</span>
+                                <span>Security Awareness</span>
+                                <span>Event Planning</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="team-category">
-                <h2>Administration</h2>
+            <div class="team-category" data-category="administration">
+                <h2 class="animate__animated animate__fadeIn animate__delay-2s">Administration</h2>
                 <div class="team-grid">
                     <!-- Team Member 5 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="member-image">
                             <img src="/placeholder.svg?height=200&width=200" alt="Dileep Pant">
                         </div>
@@ -120,15 +167,23 @@
                             <h3>Dileep Pant</h3>
                             <p class="member-role">Secretary</p>
                             <div class="member-contact">
-                                <a href="mailto:dileeppant@gmail.com" aria-label="Email Dileep Pant"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:dileeppant@example.com" aria-label="Email Dileep Pant"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/dileeppant" target="_blank" aria-label="LinkedIn Profile of Dileep Pant"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/dileeppant" target="_blank" aria-label="GitHub Profile of Dileep Pant"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Maintaining records and handling administrative tasks for the club.</p>
+                            <div class="member-skills">
+                                <span>Documentation</span>
+                                <span>Organization</span>
+                                <span>Communication</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Team Member 6 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="member-image">
                             <img src="Ujjal.jpg" alt="Ujjal Singh Mahata">
                         </div>
@@ -136,15 +191,24 @@
                             <h3>Ujjal Singh Mahata</h3>
                             <p class="member-role">Treasurer</p>
                             <div class="member-contact">
+                              
                                 <a href="mailto:ujjalmahata439@gmail.com" aria-label="Email Ujjal Singh Mahata"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/ujjalmahata02" target="_blank" aria-label="LinkedIn Profile of Ujjal Singh Mahata"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://github.com/ujjalmahata02" target="_blank" aria-label="GitHub Profile of Ujjal Singh Mahata"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/ujjalmahata02" target="_blank" aria-label="GitHub Profile of Ujjal Singh Mahata"><i class="fab fa-github"></i></a
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Managing club finances and budget planning for events and activities.</p>
+                            <div class="member-skills">
+                                <span>Financial Planning</span>
+                                <span>Resource Management</span>
+                                <span>Budgeting</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Team Member 7 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="member-image">
                             <img src="aarati.jpg" alt="Aarati Bhatt">
                         </div>
@@ -153,19 +217,27 @@
                             <p class="member-role">Vice Secretary</p>
                             <div class="member-contact">
                                 <a href="aaratib424@gmail.com" aria-label="Email Aarati Bhatt"><i class="fas fa-envelope"></i></a>
-                                <a href="https://www.linkedin.com/in/aarati-bhatt-850334340 " target="_blank" aria-label="LinkedIn Profile of Aarati Bhatt"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/aarati-bhatt-850334340" target="_blank" aria-label="LinkedIn Profile of Aarati Bhatt"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/aaratibhatt1234" target="_blank" aria-label="GitHub Profile of Aarati Bhatt"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Assisting the secretary in administrative tasks and record keeping.</p>
+                            <div class="member-skills">
+                                <span>Documentation</span>
+                                <span>Event Coordination</span>
+                                <span>Team Support</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="team-category">
-                <h2>Department Leads</h2>
+            <div class="team-category" data-category="department">
+                <h2 class="animate__animated animate__fadeIn animate__delay-3s">Department Leads</h2>
                 <div class="team-grid">
                     <!-- Team Member 8 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="member-image">
                             <img src="/placeholder.svg?height=200&width=200" alt="Dikshya Bam">
                         </div>
@@ -173,15 +245,23 @@
                             <h3>Dikshya Bam</h3>
                             <p class="member-role">Public Relation Lead</p>
                             <div class="member-contact">
-                                <a href="mailto:dikshyabam@gmail.com" aria-label="Email Dikshya Bam"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:dikshyabam@example.com" aria-label="Email Dikshya Bam"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/dikshyabam" target="_blank" aria-label="LinkedIn Profile of Dikshya Bam"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/dikshyabam" target="_blank" aria-label="GitHub Profile of Dikshya Bam"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Managing club's public relations and external communications.</p>
+                            <div class="member-skills">
+                                <span>Communication</span>
+                                <span>Social Media</span>
+                                <span>Networking</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Team Member 9 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="member-image">
                             <img src="Nisa.jpg" alt="Nisha Saud">
                         </div>
@@ -194,10 +274,18 @@
                                 <a href="https://github.com/Neesa-Saud" target="_blank" aria-label="GitHub Profile of Nisha Saud"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
+                        <div class="member-hover-info">
+                            <p>Coordinating club operations and event logistics.</p>
+                            <div class="member-skills">
+                                <span>Event Management</span>
+                                <span>Logistics</span>
+                                <span>Team Coordination</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Team Member 10 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="member-image">
                             <img src="J.jpg" alt="Jelina Bhatt">
                         </div>
@@ -210,10 +298,18 @@
                                 <a href="https://github.com/jelina-bhatt" target="_blank" aria-label="GitHub Profile of Jelina Bhatt"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
+                        <div class="member-hover-info">
+                            <p>Leading technical workshops and training sessions for club members.</p>
+                            <div class="member-skills">
+                                <span>Technical Training</span>
+                                <span>Workshop Facilitation</span>
+                                <span>Cybersecurity Tools</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Team Member 11 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="member-image">
                             <img src="https://avatars.githubusercontent.com/u/182990458?s=400&u=5d6439a2ee65678c82601b84d639a9fd1e56f048&v=4" alt="Tekendra Bhandari">
                         </div>
@@ -221,20 +317,28 @@
                             <h3>Tekendra Bhandari</h3>
                             <p class="member-role">Tech Lead</p>
                             <div class="member-contact">
-                                <a href="mailto:tekendraa67@gmail.com" aria-label="Email Tekendra Bhandari"><i class="fas fa-envelope"></i></a>
+                                <a href="tekendraa67@gmail.com" aria-label="Email Tekendra Bhandari"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/tekendraa7" target="_blank" aria-label="LinkedIn Profile of Tekendra Bhandari"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/tekendraa" target="_blank" aria-label="GitHub Profile of Tekendra Bhandari"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Specializing in CTF competitions and technical challenge development.</p>
+                            <div class="member-skills">
+                                <span>CTF Design</span>
+                                <span>Penetration Testing</span>
+                                <span>Security Tools</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="team-category">
-                <h2>Executive Members</h2>
+            <div class="team-category" data-category="executive">
+                <h2 class="animate__animated animate__fadeIn animate__delay-4s">Executive Members</h2>
                 <div class="team-grid">
                     <!-- Team Member 12 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-4s">
                         <div class="member-image">
                             <img src="/placeholder.svg?height=200&width=200" alt="Anuradha Bhatt">
                         </div>
@@ -242,15 +346,23 @@
                             <h3>Anuradha Bhatt</h3>
                             <p class="member-role">Executive Member</p>
                             <div class="member-contact">
-                                <a href="mailto:anuradhabhatt@gmail.com" aria-label="Email Anuradha Bhatt"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:anuradhabhatt@example.com" aria-label="Email Anuradha Bhatt"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/anuradhabhatt" target="_blank" aria-label="LinkedIn Profile of Anuradha Bhatt"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/anuradhabhatt" target="_blank" aria-label="GitHub Profile of Anuradha Bhatt"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Supporting club initiatives and contributing to event planning.</p>
+                            <div class="member-skills">
+                                <span>Event Support</span>
+                                <span>Content Creation</span>
+                                <span>Team Collaboration</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Team Member 13 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-4s">
                         <div class="member-image">
                             <img src="/placeholder.svg?height=200&width=200" alt="Mukul Bhatt">
                         </div>
@@ -258,15 +370,23 @@
                             <h3>Mukul Bhatt</h3>
                             <p class="member-role">Executive Member</p>
                             <div class="member-contact">
-                                <a href="mailto:mukulbhatt@gmail.com" aria-label="Email Mukul Bhatt"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:mukulbhatt@example.com" aria-label="Email Mukul Bhatt"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/mukulbhatt" target="_blank" aria-label="LinkedIn Profile of Mukul Bhatt"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/mukulbhatt" target="_blank" aria-label="GitHub Profile of Mukul Bhatt"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Assisting with technical workshops and training materials development.</p>
+                            <div class="member-skills">
+                                <span>Technical Writing</span>
+                                <span>Workshop Assistance</span>
+                                <span>Research</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Team Member 14 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-4s">
                         <div class="member-image">
                             <img src="/placeholder.svg?height=200&width=200" alt="Bhupendra Joshi">
                         </div>
@@ -274,15 +394,23 @@
                             <h3>Bhupendra Joshi</h3>
                             <p class="member-role">Executive Member</p>
                             <div class="member-contact">
-                                <a href="mailto:bhupendrajoshi@gmail.com" aria-label="Email Bhupendra Joshi"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:bhupendrajoshi@example.com" aria-label="Email Bhupendra Joshi"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/bhupendrajoshi" target="_blank" aria-label="LinkedIn Profile of Bhupendra Joshi"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/bhupendrajoshi" target="_blank" aria-label="GitHub Profile of Bhupendra Joshi"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Contributing to community outreach and awareness programs.</p>
+                            <div class="member-skills">
+                                <span>Community Engagement</span>
+                                <span>Public Speaking</span>
+                                <span>Awareness Campaigns</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Team Member 15 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-4s">
                         <div class="member-image">
                             <img src="A.jpg" alt="Aasish Mehata">
                         </div>
@@ -295,10 +423,18 @@
                                 <a href="https://github.com/asishmehata48" target="_blank" aria-label="GitHub Profile of Asish Mehata"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
+                        <div class="member-hover-info">
+                            <p>Focusing on social media management and digital content creation.</p>
+                            <div class="member-skills">
+                                <span>Social Media</span>
+                                <span>Content Creation</span>
+                                <span>Digital Marketing</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Team Member 16 -->
-                    <div class="team-member">
+                    <div class="team-member animate__animated animate__fadeInUp animate__delay-4s">
                         <div class="member-image">
                             <img src="sambidha.jpg" alt="Sambidha Airee">
                         </div>
@@ -306,16 +442,34 @@
                             <h3>Sambidha Airee</h3>
                             <p class="member-role">Executive Member</p>
                             <div class="member-contact">
-                                <a href="mailto:sambidhairee@gmail.com" aria-label="Email Sambidha Airee"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:sambidhairee@example.com" aria-label="Email Sambidha Airee"><i class="fas fa-envelope"></i></a>
                                 <a href="https://linkedin.com/in/sambidhairee" target="_blank" aria-label="LinkedIn Profile of Sambidha Airee"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://github.com/sambidhairee" target="_blank" aria-label="GitHub Profile of Sambidha Airee"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-hover-info">
+                            <p>Supporting event organization and member coordination activities.</p>
+                            <div class="member-skills">
+                                <span>Event Planning</span>
+                                <span>Member Coordination</span>
+                                <span>Team Building</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="team-join-section animate__animated animate__fadeIn">
+            <h2>Join Our Team</h2>
+            <p>Interested in becoming a part of our cybersecurity community? We're always looking for passionate individuals to join our team.</p>
+            <a href="signup.html" class="join-team-btn glow-button">Apply Now</a>
+        </div>
     </main>
+
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
         <div class="social-links">
@@ -328,8 +482,7 @@
         <p>&copy; 2025 Copyright Reserved by CSC-FWU</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-

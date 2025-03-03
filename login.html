@@ -6,6 +6,7 @@
     <title>Login - Cyber Security Club FWU</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="background-overlay"></div>
@@ -29,16 +30,27 @@
     </header>
 
     <main class="auth-content">
-        <div class="auth-container">
+        <div class="auth-container animate__animated animate__fadeIn">
             <h2>Login to Your Account</h2>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+            </div>
             <form id="login-form">
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <div class="form-floating">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <label for="email">Email</label>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <div class="form-floating">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <label for="password">Password</label>
+                        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="form-options">
                     <div class="remember-me">
@@ -47,7 +59,10 @@
                     </div>
                     <a href="#" class="forgot-password" id="forgot-password">Forgot Password?</a>
                 </div>
-                <button type="submit" class="auth-button glow-button">Login</button>
+                <button type="submit" class="auth-button glow-button">
+                    <span class="button-text">Login</span>
+                    <span class="button-icon"><i class="fas fa-sign-in-alt"></i></span>
+                </button>
             </form>
             
             <div class="social-auth">
@@ -66,7 +81,62 @@
                 <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
             </div>
         </div>
+        
+        <div class="auth-features animate__animated animate__fadeIn animate__delay-1s">
+            <h3>Member Benefits</h3>
+            <ul class="benefits-list">
+                <li>
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4>Exclusive Workshops</h4>
+                        <p>Access to members-only technical workshops and training sessions</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h4>Community Access</h4>
+                        <p>Connect with like-minded cybersecurity enthusiasts</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-laptop-code"></i>
+                    <div>
+                        <h4>Learning Resources</h4>
+                        <p>Premium cybersecurity learning materials and tools</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <h4>Certification Preparation</h4>
+                        <p>Resources to help prepare for industry certifications</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </main>
+
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content animate__animated animate__fadeInDown">
+            <span class="close">&times;</span>
+            <h2>Reset Password</h2>
+            <p>Enter your email address and we'll send you a link to reset your password.</p>
+            <form id="reset-password-form">
+                <div class="form-group">
+                    <div class="form-floating">
+                        <input type="email" id="reset-email" name="reset-email" placeholder="Email" required>
+                        <label for="reset-email">Email Address</label>
+                    </div>
+                </div>
+                <button type="submit" class="auth-button glow-button">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
         <div class="social-links">
@@ -77,20 +147,7 @@
         <p>&copy; 2025 Copyright Reserved by CSC-FWU</p>
     </footer>
 
-    <div id="forgot-password-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Reset Password</h2>
-            <form id="reset-password-form">
-                <div class="form-group">
-                    <label for="reset-email">Enter your email</label>
-                    <input type="email" id="reset-email" name="reset-email" required>
-                </div>
-                <button type="submit" class="auth-button glow-button">Send Reset Link</button>
-            </form>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
+

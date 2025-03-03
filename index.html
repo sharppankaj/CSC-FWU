@@ -6,6 +6,7 @@
     <title>Cyber Security Club - Far Western University</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="background-overlay"></div>
@@ -16,7 +17,7 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html" class="glow-button">Home</a></li>
+                <li><a href="index.html" class="glow-button active">Home</a></li>
                 <li><a href="our_team.html" class="glow-button">Our Team</a></li>
                 <li><a href="events.html" class="glow-button">Events & Notice</a></li>
                 <li><a href="blogs.html" class="glow-button">Blogs</a></li>
@@ -30,13 +31,13 @@
 
     <main class="home-content">
         <section class="hero">
-            <h1>Welcome to <span class="highlight">Cyber Security Club</span></h1>
-            <h2>Far Western University</h2>
-            <p>Empowering students with knowledge and skills in cybersecurity</p>
-            <a href="signup.html" class="join-button glow-button">Join Us</a>
+            <h1 class="animate__animated animate__fadeInDown">Welcome to <span class="highlight">Cyber Security Club</span></h1>
+            <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Far Western University</h2>
+            <p class="animate__animated animate__fadeIn animate__delay-2s">Empowering students with knowledge and skills in cybersecurity</p>
+            <a href="signup.html" class="join-button glow-button animate__animated animate__pulse animate__delay-3s animate__infinite">Join Us</a>
         </section>
 
-        <section class="features">
+        <section class="features animate__animated animate__fadeIn animate__delay-3s">
             <div class="feature-card">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Learn Security</h3>
@@ -54,6 +55,10 @@
             </div>
         </section>
     </main>
+
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
         <div class="social-links">
